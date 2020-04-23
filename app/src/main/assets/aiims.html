@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Corona Risk ClaC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans"/>
+    <!--  <link type='text/css' rel='stylesheet' href='stylesheet.css'/> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+            html {
+              height: 100%;
+          }
+          button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        body {
+          background-color: #ffffff;
+          min-height: 100%;
+          border: 15px solid #98eb26;
+        }
+          #container{
+                  max-width:100%;
+                  max-height: 100%;
+                  margin:auto;
+                  position: relative;
+                  padding: 18px 18px 18px 18px;
+                  color: rgb(0, 0, 0);
+                  font-weight: bold;
+                  margin: 7px;
+                  background-size: 100% 100%;
+                  background-blend-mode: overlay;
+            }
+            /* The checkboxcontainer */
+            .checkboxcontainer {
+              display: block;
+              position: relative;
+              padding-left: 35px;
+              margin-bottom: 12px;
+              cursor: pointer;
+              font-size: 22px;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+
+            #highText
+            {
+              color:#ff3300;
+            }
+
+            /* Hide the browser's default checkbox */
+            .checkboxcontainer input {
+              position: absolute;
+              opacity: 0;
+              cursor: pointer;
+              height: 0;
+              width: 0;
+            }
+
+            /* Create a custom checkbox */
+            .checkmark {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 25px;
+              width: 25px;
+              background-color: #eee;
+            }
+
+            /* On mouse-over, add a grey background color */
+            .checkboxcontainer:hover input ~ .checkmark {
+              background-color: #ccc;
+            }
+
+            /* When the checkbox is checked, add a blue background */
+            .checkboxcontainer input:checked ~ .checkmark {
+              background-color: #2196F3;
+            }
+
+            /* Create the checkmark/indicator (hidden when not checked) */
+            .checkmark:after {
+              content: "";
+              position: absolute;
+              display: none;
+            }
+
+            /* Show the checkmark when checked */
+            .checkboxcontainer input:checked ~ .checkmark:after {
+              display: block;
+            }
+
+            /* Style the checkmark/indicator */
+            .checkboxcontainer .checkmark:after {
+              left: 9px;
+              top: 5px;
+              width: 5px;
+              height: 10px;
+              border: solid white;
+              border-width: 0 3px 3px 0;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+            a{
+              color: #39799b;
+            }
+
+            input {
+              margin: 0;
+              font-family: inherit;
+              font-size: inherit;
+              line-height: inherit;
+              margin-right: 7px;
+          }
+          button {
+            margin: 5px;
+          }
+
+          table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            border: 1px solid white;
+          }
+
+          th{
+          text-align: left;
+            padding: 8px;
+            background-color: #98eb26;
+            text-align:center;
+            border:1px solid white;
+            color:black;
+          }
+          td {
+            padding: 8px;
+            color:white;
+            text-align:center;
+            border:1px solid white;
+          }
+          #left
+          {
+            text-align: left;
+          }
+          tr:nth-child(even) {
+            background-color: #2a6791
+          }
+          tr:nth-child(odd){
+            background-color: #82a2b8
+            }
+          </style>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body onload="home();">
+<div id='container'>
+    <div id="position">
+        <div id='quiz'></div>
+    </div>
+</div>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+<script type="text/javascript" src='newone.js'></script>
+<script type='text/javascript' src='aims2.js'></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>
